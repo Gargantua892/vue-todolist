@@ -3,6 +3,7 @@ const {createApp} = Vue;
 createApp({
     data() {
         return {
+            logo: 'https://hiringplatform.boolean.careers/images/logo.png',
             newTask: '',
             tasks: [
                 {

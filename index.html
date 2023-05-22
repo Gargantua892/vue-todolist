@@ -18,8 +18,11 @@
 <body>
     <div id="app">
         <div class="list-container">
-            <input type="text" placeholder="Nuova task" v-model="newTask">
-            <button @click="addTask">Aggiungi</button>
+            <img :src="logo" alt="logo" class="logo">
+            <div class="controls">
+                <input type="text" placeholder="Nuova task" v-model="newTask">
+                <button @click="addTask">Aggiungi +</button>
+            </div>
             <ul>
                 <!-- task -->
                 <li v-for="key in tasks" class="list-item" @click="lineThrough">

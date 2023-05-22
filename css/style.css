@@ -1,16 +1,60 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .list-container{
     max-width: 360px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .list-item{
     display: flex;
     justify-content: space-between;
-    background-color: lightgrey;
     padding: 12px;
     border-radius: 6px;
+    background-color: #eeeeef;
+    box-shadow: 4px 4px 16px -3px rgba(0,0,0,0.1);
 }
 
 .list-item > span.line{
     text-decoration: line-through; 
 
+}
+
+.logo{
+    max-width: 200px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.controls{
+    display: flex;
+    width: 100%;
+}
+
+.controls input {
+    flex: 6;
+    padding: 8px 20px;
+    border-radius: 200px;
+    border: 0px;
+    background-color: aliceblue;
+    border: 1px solid lightgray;
+}
+
+ul{
+    padding: 0px;
+    width: 100%;
+}
+
+li{
+    margin: 12px 0px;
+}
+
+button {
+    border-radius: 200px;
+    border: none;
+    margin-left: 8px;
+    padding: 0px 16px;
 }
