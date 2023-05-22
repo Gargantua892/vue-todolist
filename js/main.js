@@ -13,13 +13,17 @@ createApp({
         }
     },
     methods: {
-        deleteTask: function() {
-            this.tasks.splice(this.task);
+        deleteTask: function(index) {
+            this.tasks.splice(index, 1);
     },
-        addTask(){
-            this.tasks.push(this.newTask);
-            // this.newTask = '';
-            console.log(this);
+    //metodo per creare le nuove task (aggiunge oggetto ad array)
+        addTask: function(){
+            var text = this.newTask;
+            if (text) {
+                this.tasks.unshift({ text: text, done: false })
+                console.log(this.tasks);
+                this.newTask = '';
+            }
         }
     },
 }).mount("#app");
