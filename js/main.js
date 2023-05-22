@@ -24,6 +24,14 @@ createApp({
                 console.log(this.tasks);
                 this.newTask = '';
             }
+        },
+
+        //metodo testo barrato
+        lineThrough: function(){
+            //toggle della proprietà done da falso a vero
+            this.tasks.done = !this.tasks.done;
+            console.log(this.tasks.done);
+            
         }
     },
 }).mount("#app");

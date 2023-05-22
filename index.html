@@ -22,9 +22,8 @@
             <button @click="addTask">Aggiungi</button>
             <ul>
                 <!-- task -->
-                <li v-for="key in tasks" class="list-item">
-                    <span v-if="key.done === true" class="line-through">{{ key.text }}</span>
-                    <span v-else>{{ key.text }}</span>
+                <li v-for="key in tasks" class="list-item" @click="lineThrough">
+                    <span v-bind:class="{ line: tasks.done }">{{ key.text }}</span>
                     <i class="bi bi-x-circle" @click="deleteTask"></i>
                 </li>
                 <!-- / task -->

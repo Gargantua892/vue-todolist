@@ -10,7 +10,7 @@
     border-radius: 6px;
 }
 
-.list-item > span.line-through{
+.list-item > span.line{
     text-decoration: line-through; 
 
 }
