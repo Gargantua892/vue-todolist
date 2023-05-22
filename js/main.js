@@ -3,18 +3,24 @@ const {createApp} = Vue;
 createApp({
     data() {
         return {
+            newTask: '',
             tasks: [
                 {
-                    text: "Testo della task",
+                    text: "Prova elemento",
                     done: false,
                 },
             ]
         }
     },
     methods: {
-        deleteTask: function(task) {
+        deleteTask: function() {
             this.tasks.splice(this.task);
     },
+        addTask(){
+            this.tasks.push(this.newTask);
+            // this.newTask = '';
+            console.log(this);
+        }
     },
 }).mount("#app");
 

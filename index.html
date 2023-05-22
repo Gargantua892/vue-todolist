@@ -18,6 +18,8 @@
 <body>
     <div id="app">
         <div class="list-container">
+            <input type="text" placeholder="Nuova task" v-model="newTask">
+            <button @click="addTask">Aggiungi</button>
             <ul>
                 <!-- task -->
                 <li v-for="key in tasks" class="list-item">
